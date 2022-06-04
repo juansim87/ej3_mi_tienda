@@ -7,44 +7,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="" />
   </head>
-  <nav class="nav">
-    <div class="nav__menu">
-      <div class="nav__menu--gender">
-        <h3 class="nav__menu--gender__option">Mujer</h3>
-        <h3 class="nav__menu--gender__option">Hombre</h3>
+  <body id="body">
+    <nav id="nav">
+      <div class="nav__menu">
+        <div class="nav__menu--gender">
+          <h3 class="nav__menu--gender__option">Mujer</h3>
+          <h3 class="nav__menu--gender__option">Hombre</h3>
+        </div>
+        <div class="nav__menu--sections">
+          <h3 class="nav__menu--sections__choice">Novedades</h3>
+          <h3 class="nav__menu--sections__choice clothes">Ropa</h3>
+          <h3 class="nav__menu--sections__choice">P&B by Rosalía</h3>
+          <h3 class="nav__menu--sections__choice">Zapatos</h3>
+          <h3 class="nav__menu--sections__choice">Accesorios</h3>
+          <h3 class="nav__menu--sections__choice">Editorials</h3>
+          <h3 class="nav__menu--sections__choice">Join Life</h3>
+          <h3 class="nav__menu--sections__choice promotions">Promociones</h3>
+        </div>
       </div>
-      <div class="nav__menu--sections">
-        <h3 class="nav__menu--sections__choice">Novedades</h3>
-        <h3 class="nav__menu--sections__choice clothes">Ropa</h3>
-        <h3 class="nav__menu--sections__choice">P&B by Rosalía</h3>
-        <h3 class="nav__menu--sections__choice">Zapatos</h3>
-        <h3 class="nav__menu--sections__choice">Accesorios</h3>
-        <h3 class="nav__menu--sections__choice">Editorials</h3>
-        <h3 class="nav__menu--sections__choice">Join Life</h3>
-        <h3 class="nav__menu--sections__choice promotions">Promociones</h3>
+      <div class="nav__headpage">
+        <h1 class="nav__headpage--title">Mi_tienda</h1>
+        <p class="nav__headpage--navigation">
+          Mujer > Ropa > Camisetas > Licencias (51 artículos)
+        </p>
       </div>
-    </div>
-    <div class="nav__headpage">
-      <h1 class="nav__headpage--title">Mi_tienda</h1>
-      <p class="nav__headpage--navigation">
-        Mujer > Ropa > Camisetas > Licencias (51 artículos)
-      </p>
-    </div>
-    <div class="nav__searcher">
-      <div class="nav__searcher--box">
-        <input type="text" class="nav__searcher--box__input" />
-        <img src="" alt="" class="nav__searcher--box__icon" />//Register
-        <img src="" alt="" class="nav__searcher--box__icon" />//Bag
+      <div class="nav__searcher">
+        <div class="nav__searcher--box">
+          <input type="text" class="nav__searcher--box__input" />
+          <img src="" alt="" class="nav__searcher--box__icon" />//Register
+          <img src="" alt="" class="nav__searcher--box__icon" />//Bag
+        </div>
+        <div class="nav__searcher--arrange">
+          <p class="nav__searcher--arrange__view">Vista 2 4</p>
+          <p class="nav__searcher--arrange__order">Ordenar por</p>
+          <p class="nav__searcher--arrange__filter">Filtros</p>
+        </div>
       </div>
-      <div class="nav__searcher--arrange">
-        <p class="nav__searcher--arrange__view">Vista 2 4</p>
-        <p class="nav__searcher--arrange__order">Ordenar por</p>
-        <p class="nav__searcher--arrange__filter">Ordenar por</p>
-      </div>
-    </div>
-    <div></div>
-  </nav>
-  <body class="body">
+    </nav>
+    <main>
     <div class="body__tile new">
       <img src="" alt="" class="body__tile--img" />
       <div class="body__tile--info">
@@ -206,7 +206,8 @@
         <p class="body__tile--info__price"></p>
       </div>
     </div>
-  </body>
+  </main>
+  
   <footer class="footer">
     <div class="footer__newsletter">
       <h2 class="footer__newsletter--advertiesement">10% de descuento...</h2>
@@ -346,8 +347,67 @@
       </div>
     </div>
     <div class="footer__bottom">
-        <div></div>
-        <div></div>
+        <div class="footer__bottom--info">
+          <p class="footer__bottom--info__language">España|es</p>
+          <div class="footer__bottom--info__mobile">
+            <img src="" alt="" class="footer__bottom--info__mobile--icon">
+          <a href="#" class="footer__bottom--info__mobile--app">iOS app</a>
+          </div>
+          <div class="footer__bottom--info__mobile">
+            <img src="" alt="" class="footer__bottom--info__mobile--icon">
+          <a href="#" class="footer__bottom--info__mobile--app">Android app</a>
+          </div>
+          <a href="#" class="footer__bottom--info__more">Más moda</a>
+        </div>
+        <div>
+          <div class="footer__bottom--sales">
+            <p class="footer__bottom--sales__item">Camiseta de Rolling Stones logo</p>
+            <p class="footer__bottom--sales__price">15,99€</p>
+          </div>
+          <div class="footer__bottom--sales">
+            <p class="footer__bottom--sales__item">Camiseta de AC/DC logo leopardo</p>
+            <p class="footer__bottom--sales__price">15,99€</p>
+          </div>
+          <div class="footer__bottom--sales">
+            <p class="footer__bottom--sales__item">Camiseta de Bella Durmiente</p>
+            <p class="footer__bottom--sales__price">12,99€</p>
+          </div>
+          <div class="footer__bottom--sales">
+            <p class="footer__bottom--sales__item">Camiseta de Rolling Stones lengua</p>
+            <p class="footer__bottom--sales__price">15,99€</p>
+          </div>
+        </div>
     </div>
   </footer>
+  <div class="scroll-up"><a href="#nav">^</a></div>
+</body>
 </html>
+
+
+//Para stilos del .scroll-up {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 90vw;
+  bottom: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 10px;
+}//
