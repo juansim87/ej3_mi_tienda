@@ -1,0 +1,7 @@
+
+
+.nav {
+  
+  @include flexCenter(row, flex-end, space-between);
+  
+}

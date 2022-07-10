@@ -1,0 +1,18 @@
+.main {
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.3rem;
+
+  &__tile {
+    @include flexCenter(column, center, center);
+    max-width: 20%;
+    
+    &--info {
+      @include flexCenter(column, center, center);
+      &__price {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.aside {
+    position: absolute;
+    &__menu {
+        
+        display: flex;
+        @include flexCenter(column, center, center);
+        &--gender {
+            display: flex;
+            @include flexCenter(row, center, space-between);
+            margin: 2px;
+        }
+      }
+}
