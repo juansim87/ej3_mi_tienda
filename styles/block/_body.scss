@@ -1,5 +1,6 @@
 #body {
   position: relative;
   display: flex;
-  @include flexCenter(column, center, center); 
+  @include flexCenter(column, center, center);
+  font-family: 'Amiko', sans-serif;;
 }

@@ -1,0 +1,68 @@
+.footer {
+    @include flexCenter(column, center, center);
+    width: 100%;
+    
+    margin-top: 10%;
+     
+    padding: 5%;
+    &__newsletter {
+        @include flexCenter(column, center, center);
+        padding: 5% 0 5% 0;
+        width: 100%;
+        text-transform: $up;
+        border-top: solid $lgr 1px;
+    }
+
+    &__info {
+        @include flexCenter(column, center, space-around);
+        padding: 5% 0 5% 0;
+        width: 100%;
+        border-top: solid $lgr 1px;
+        border-bottom: solid $lgr 1px;
+        &--contact {
+            @include flexCenter(row, center, center);
+            &__number {
+                @include flexCenter(row, center, center);
+                &--icon {
+                    width: $icon;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        @include flexCenter(row, flex-start, space-around);
+        width: 100%;
+        &--section {
+            @include flexCenter(column, space-between, flex-start);
+            &__title {
+                margin: 15px 0px;
+                font-weight: bold;
+            }
+            &__option {
+                @include flexCenter(row, space-around, flex-start);
+                margin: 5px 0px;
+                &--icon{
+                    width: $smicon;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        @include flexCenter(column, space-between, center);
+        width: 100%;
+        &--info {
+            @include flexCenter(row, flex-start, space-around);
+        }
+        &--sales {
+            @include flexCenter(row, center, space-around);
+            
+            &__item {
+                @include flexCenter(column, center, space-evenly);
+            }
+        }
+    }
+}
+
+

@@ -7,13 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap" rel="stylesheet">
   </head>
   <body id="body">
     <aside class="aside">
       <div class="aside__menu">
         <div class="aside__menu--gender">
-          <h3 class="aside__menu--gender__option">Mujer</h3>
-          <h3 class="aside__menu--gender__option">Hombre</h3>
+          <h3 class="aside__menu--gender__option woman">Mujer</h3>
+          <h3 class="aside__menu--gender__option man">Hombre</h3>
         </div>
         <div class="aside__menu--sections">
           <h3 class="aside__menu--sections__choice">Novedades</h3>
@@ -31,17 +32,20 @@
       <div class="nav__headpage">
         <h1 class="nav__headpage--title">Mi_tienda</h1>
         <p class="nav__headpage--navigation">
-          Mujer > Ropa > Camisetas > Licencias (51 artículos)
+          <span class="nav__headpage--navigation__path past">Mujer</span>  >  <span class="nav__headpage--navigation__path past">Ropa</span>  >  <span class="nav__headpage--navigation__path past">Camisetas</span>  >  <span class="nav__headpage--navigation__path">Licencias (51 artículos)</span>
         </p>
       </div>
       <div class="nav__searcher">
-        <div class="nav__searcher--box">
-          <input type="text" class="nav__searcher--box__input" />
-          <img src="" alt="" class="nav__searcher--box__icon" />//Register
-          <img src="" alt="" class="nav__searcher--box__icon" />//Bag
+        <div class="nav__searcher--user">
+          <div class="nav__searcher--user__box">
+          <img src="./img/icons/standard/search.png" alt="search" class="nav__searcher--user__box--icon">
+          <input type="text" class="nav__searcher--user__box--input" placeholder="Buscar"/>
+        </div>
+          <img src="./img/icons/standard/person.svg" alt="" class="nav__searcher--user__icon" />
+          <img src="./img/icons/standard/handbag.svg" alt="" class="nav__searcher--user__icon" />
         </div>
         <div class="nav__searcher--arrange">
-          <p class="nav__searcher--arrange__view">Vista 2 4</p>
+          <p class="nav__searcher--arrange__view">Vista 2 <span class="past">4</span></p>
           <p class="nav__searcher--arrange__order">Ordenar por</p>
           <p class="nav__searcher--arrange__filter">Filtros</p>
         </div>
@@ -213,9 +217,9 @@
   
   <footer class="footer">
     <div class="footer__newsletter">
-      <h2 class="footer__newsletter--advertiesement">10% de descuento...</h2>
+      <h2 class="footer__newsletter--advertisement">10% de descuento...</h2>
       <h2 class="footer__newsletter--call">¡Suscríbete a la newsletter!*</h2>
-      <input type="email" class="footer__newsletter--input" />//email
+      <input type="email" class="footer__newsletter--input" placeholder="Introduce tu e-mail"/>
     </div>
     <div class="footer__info">
       <div class="footer__info--title">
@@ -223,10 +227,12 @@
       </div>
       <div class="footer__info--contact">
         <div class="footer__info--contact__number">
-          <img src="" alt="" class="footer__info--contact__number--icon" />
+          <img src="./img/icons/standard/smartphone.svg" alt="" class="footer__info--contact__number--icon" />
           <p class="footer__info--contact__number--text">900 812 900</p>
         </div>
+        <span>  |  </span>
         <p class="footer__info--contact__sell">Venta online</p>
+        <span>  |  </span>
         <p class="footer__info--contact__sell">Tiendas y empresas</p>
       </div>
       <div class="footer__info--time">
@@ -276,141 +282,141 @@
       </div>
       <div class="footer__menu--section">
         <h3 class="footer__menu--section__title">Social</h3>
-        <div class="footer__menu--section__option rrss">
-          <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-          <a href="#" class="footer__menu--section__option rrss__text">Facebook</a>
+        <div class="footer__menu--section__option">
+          <img src="./img/icons/rrss/facebook.svg" alt="Facebook" class="footer__menu--section__option--icon" />
+          <a href="#" class="footer__menu--section__option--text">Facebook</a>
         </div>
-        <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-        <a href="#" class="footer__menu--section__option rrss__text">Twitter</a>
-        <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-        <a href="#" class="footer__menu--section__option rrss__text">Pinterest</a>
-        <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-        <a href="#" class="footer__menu--section__option rrss__text">Instagram</a>
-        <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-        <a href="#" class="footer__menu--section__option rrss__text">Youtube</a>
-        <img src="" alt="" class="footer__menu--section__option rrss__icon" />
-        <a href="#" class="footer__menu--section__option rrss__text">Spotify</a>
+        <div class="footer__menu--section__option">
+          <img src="./img/icons/rrss/twitter.svg" alt="Twitter" class="footer__menu--section__option--icon" />
+        <a href="#" class="footer__menu--section__option--text">Twitter</a>
+      </div>
+      <div class="footer__menu--section__option">
+        <img src="./img/icons/rrss/pinterest.svg" alt="Pinterest" class="footer__menu--section__option--icon" />
+        <a href="#" class="footer__menu--section__option--text">Pinterest</a>
+      </div>
+      <div class="footer__menu--section__option">
+        <img src="./img/icons/rrss/instagram.svg" alt="Instagram" class="footer__menu--section__option--icon" />
+        <a href="#" class="footer__menu--section__option--text">Instagram</a>
+      </div>
+        <div class="footer__menu--section__option">
+        <img src="./img/icons/rrss/youtube.svg" alt="Youtube" class="footer__menu--section__option--icon" />
+        <a href="#" class="footer__menu--section__option--text">Youtube</a>
+      </div>
+        <div class="footer__menu--section__option">
+        <img src="./img/icons/rrss/spotify.svg" alt="Spotify" class="footer__menu--section__option--icon" />
+        <a href="#" class="footer__menu--section__option--text">Spotify</a>
+      </div>
       </div>
       <div class="footer__menu--section">
-        <h3 class="footer__menu--section__title payment">Métodos de pago</h3>
+         <h3 class="footer__menu--section__title">Métodos de pago</h3>
+         <div class="footer__menu--section__option">
+          <img
+            src="./img/icons/standard/credit-card.svg"
+            alt=""
+            class="footer__menu--section__option--icon"
+          />
+          <p class="footer__menu--section__option--text">VISA</p>
+        </div>
+        <div class="footer__menu--section__option">
         <img
-          src=""
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">VISA</p>
+        <p class="footer__menu--section__option--text">MasterCard</p>
+      </div>
+      <div class="footer__menu--section__option">
         <img
-          src=""
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">MasterCard</p>
+        <p class="footer__menu--section__option--text">AMEX</p>
+      </div>
+        <div class="footer__menu--section__option"><img
+          src="./img/icons/standard/credit-card.svg"
+          alt=""
+          class="footer__menu--section__option--icon"
+        />
+        <p class="footer__menu--section__option--text">Affinity</p>
+      </div>
+        <div class="footer__menu--section__option">
         <img
-          src=""
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">AMEX</p>
-        <img
-          src=""
+        <p class="footer__menu--section__option--text">Paypal</p>
+      </div>
+        <div class="footer__menu--section__option">
+          <img
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">Affinity</p>
-        <img
-          src=""
+        <p class="footer__menu--section__option--text">Tarjeta regalo</p>
+      </div>
+        <div class="footer__menu--section__option">
+          <img
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">Paypal</p>
-        <img
-          src=""
+        <p class="footer__menu--section__option--text">Pago en tienda</p>
+      </div>
+        <div class="footer__menu--section__option">
+          <img
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">Tarjeta regalo</p>
-        <img
-          src=""
+        <p class="footer__menu--section__option--text">Discount</p>
+      </div>
+        <div class="footer__menu--section__option">
+          <img
+          src="./img/icons/standard/credit-card.svg"
           alt=""
-          class="footer__menu--section__option payment__icon"
+          class="footer__menu--section__option--icon"
         />
-        <p class="footer__menu--section__option payment__method">Pago en tienda</p>
-        <img
-          src=""
-          alt=""
-          class="footer__menu--section__option payment__icon"
-        />
-        <p class="footer__menu--section__option payment__method">Discount</p>
-        <img
-          src=""
-          alt=""
-          class="footer__menu--section__option payment__icon"
-        />
-        <a href="#" class="footer__menu--section__option payment__method">Transferencia bancaria</p>
+        <a href="#" class="footer__menu--section__option--text">Transferencia bancaria</p>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">
         <div class="footer__bottom--info">
-          <p class="footer__bottom--info__language">España|es</p>
+          <p class="footer__bottom--info__language">España | es</p>
           <div class="footer__bottom--info__mobile">
             <img src="" alt="" class="footer__bottom--info__mobile--icon">
           <a href="#" class="footer__bottom--info__mobile--app">iOS app</a>
-          </div>
+        </div>
           <div class="footer__bottom--info__mobile">
             <img src="" alt="" class="footer__bottom--info__mobile--icon">
           <a href="#" class="footer__bottom--info__mobile--app">Android app</a>
           </div>
           <a href="#" class="footer__bottom--info__more">Más moda</a>
         </div>
-        <div>
-          <div class="footer__bottom--sales">
-            <p class="footer__bottom--sales__item">Camiseta de Rolling Stones logo</p>
-            <p class="footer__bottom--sales__price">15,99€</p>
+        <div class="footer__bottom--sales">
+            <div class="footer__bottom--sales__item">
+            <p class="footer__bottom--sales__item--name">Camiseta de Rolling Stones logo</p>
+            <p class="footer__bottom--sales__item--price">15,99€</p>
+        </div>
+          
+          <div class="footer__bottom--sales__item">
+            <p class="footer__bottom--sales__item--name">Camiseta de AC/DC logo leopardo</p>
+            <p class="footer__bottom--sales__item--price">15,99€</p>
           </div>
-          <div class="footer__bottom--sales">
-            <p class="footer__bottom--sales__item">Camiseta de AC/DC logo leopardo</p>
-            <p class="footer__bottom--sales__price">15,99€</p>
+          <div class="footer__bottom--sales__item">
+            <p class="footer__bottom--sales__item--name">Camiseta de Bella Durmiente</p>
+            <p class="footer__bottom--sales__item--price">12,99€</p>
           </div>
-          <div class="footer__bottom--sales">
-            <p class="footer__bottom--sales__item">Camiseta de Bella Durmiente</p>
-            <p class="footer__bottom--sales__price">12,99€</p>
-          </div>
-          <div class="footer__bottom--sales">
-            <p class="footer__bottom--sales__item">Camiseta de Rolling Stones lengua</p>
-            <p class="footer__bottom--sales__price">15,99€</p>
+          <div class="footer__bottom--sales__item">
+            <p class="footer__bottom--sales__item--name">Camiseta de Rolling Stones lengua</p>
+            <p class="footer__bottom--sales__item--price">15,99€</p>
           </div>
         </div>
     </div>
   </footer>
-  <div class="scroll-up"><a href="#nav">^</a></div>
+  <div class="scroll-up"><a href="#">&#8593</a></div>
 </body>
 </html>
 
-
-//Para stilos del .scroll-up {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 90vw;
-  bottom: 30px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3rem;
-  padding-top: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border: black solid 1px;
-  border-radius: 10px;
-}//

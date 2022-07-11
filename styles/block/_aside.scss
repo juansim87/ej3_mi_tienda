@@ -1,13 +1,38 @@
 .aside {
     position: absolute;
+    top: 20px;
+    left: 20px;
     &__menu {
-        
         display: flex;
         @include flexCenter(column, center, center);
         &--gender {
+            width: 100%;
             display: flex;
             @include flexCenter(row, center, space-between);
-            margin: 2px;
+            
+            &__option {
+                text-transform: $up;
+                font-size: 0.9rem;
+            }
+        }
+        &--sections {
+            @include flexCenter(column, flex-start, flex-start);
+            margin: 1rem 0rem;
+            &__choice {
+                margin: 0.2rem 0rem;
+            }
         }
       }
+}
+
+.man {
+    color: $gr;
+}
+
+.clothes {
+    font-weight: bold;
+}
+
+.promotions {
+    color: indianred;
 }
