@@ -1,9 +1,14 @@
 .nav {
-  @include flexCenter(row, flex-end, center);
+  @include flexCenter(row, flex-end, flex-end);
   width: 100%;
   height: 30%;
+  padding: 20px;
+  
   &__headpage {
+    
     @include flexCenter(column, center, center);
+    width: 80%;
+    padding: 20px 0px;
     &--title {
       text-transform: $up;
       font-size: $h1;
@@ -12,8 +17,11 @@
   }
   &__searcher {
     width: 20%;
-    @include flexCenter(column, flex-end, space-around);
+    margin: 20px 0px;
+    gap: 1rem;
+    @include flexCenter(column, center, space-between);
     &--user {
+      width:100%;
       @include flexCenter(row, center, space-between);
       &__box {
         @include flexCenter(row, center, center);

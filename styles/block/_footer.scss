@@ -1,68 +1,98 @@
 .footer {
+  @include flexCenter(column, center, center);
+  width: 100%;
+  margin-top: 10%;
+
+  &__newsletter {
     @include flexCenter(column, center, center);
+    padding: 5% 0 5% 0;
     width: 100%;
-    
-    margin-top: 10%;
-     
-    padding: 5%;
-    &__newsletter {
-        @include flexCenter(column, center, center);
-        padding: 5% 0 5% 0;
-        width: 100%;
-        text-transform: $up;
-        border-top: solid $lgr 1px;
+    text-transform: $up;
+    border-top: solid $lgr 1px;
+    &--advertisement {
+      margin-bottom: 0.5%;
+      font-size: $h1;
     }
+    &--call {
+      margin-bottom: 0.5%;
+      font-size: $h1;
+      font-weight: 400;
+    }
+    &--input {
+      border: none;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      font-weight: bold;
+      border-bottom: 2px solid black;
+      width: 30%;
+    }
+  }
 
-    &__info {
-        @include flexCenter(column, center, space-around);
-        padding: 5% 0 5% 0;
-        width: 100%;
-        border-top: solid $lgr 1px;
-        border-bottom: solid $lgr 1px;
-        &--contact {
-            @include flexCenter(row, center, center);
-            &__number {
-                @include flexCenter(row, center, center);
-                &--icon {
-                    width: $icon;
-                }
-            }
+  &__info {
+    @include flexCenter(column, center, center);
+    margin: 5% 0 5% 0;
+    width: 100%;
+    border-top: solid $lgr 1px;
+    border-bottom: solid $lgr 1px;
+    &--contact {
+      @include flexCenter(row, center, center);
+      margin-bottom: 0.2%;
+      &__number {
+        @include flexCenter(row, center, center);
+        &--icon {
+          width: $icon;
         }
+        &--text {
+          color: rgb(99, 207, 249);
+        }
+      }
     }
+  }
 
-    &__menu {
-        @include flexCenter(row, flex-start, space-around);
-        width: 100%;
-        &--section {
-            @include flexCenter(column, space-between, flex-start);
-            &__title {
-                margin: 15px 0px;
-                font-weight: bold;
-            }
-            &__option {
-                @include flexCenter(row, space-around, flex-start);
-                margin: 5px 0px;
-                &--icon{
-                    width: $smicon;
-                }
-            }
+  &__menu {
+    @include flexCenter(row, flex-start, space-around);
+    width: 100%;
+    &--section {
+      @include flexCenter(column, space-between, flex-start);
+      &__title {
+        margin: 15px 0px;
+        font-weight: bold;
+      }
+      &__option {
+        @include flexCenter(row, space-around, flex-start);
+        margin: 5px 0px;
+        &--icon {
+          width: $smicon;
         }
+      }
     }
+  }
 
-    &__bottom {
-        @include flexCenter(column, space-between, center);
-        width: 100%;
-        &--info {
-            @include flexCenter(row, flex-start, space-around);
+  &__bottom {
+    @include flexCenter(column, space-between, center);
+    width: 100%;
+    margin-top: 3%;
+    &--info {
+      @include flexCenter(row, flex-start, space-around);
+      &__section {
+        @include flexCenter(row, center, center);
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        &--icon {
+            width: $icon
         }
-        &--sales {
-            @include flexCenter(row, center, space-around);
-            
-            &__item {
-                @include flexCenter(column, center, space-evenly);
-            }
-        }
+      }
     }
+    &--sales {
+      @include flexCenter(row, center, space-around);
+
+      &__item {
+        @include flexCenter(column, center, space-evenly);
+        &--price {
+            font-weight: 600;
+        }
+      }
+    }
+  }
 }
-
-

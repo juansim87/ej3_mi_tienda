@@ -19,6 +19,7 @@
             @include flexCenter(column, flex-start, flex-start);
             margin: 1rem 0rem;
             &__choice {
+                font-weight: 400;
                 margin: 0.2rem 0rem;
             }
         }

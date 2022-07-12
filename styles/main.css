@@ -97,6 +97,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .aside__menu--sections__choice {
+  font-weight: 400;
   margin: 0.2rem 0rem;
 }
 
@@ -123,11 +124,12 @@ a, a:hover, a:focus, a:active {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
   height: 30%;
+  padding: 20px;
 }
 
 .nav__headpage {
@@ -144,6 +146,8 @@ a, a:hover, a:focus, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
+  padding: 20px 0px;
 }
 
 .nav__headpage--title {
@@ -154,6 +158,8 @@ a, a:hover, a:focus, a:active {
 
 .nav__searcher {
   width: 20%;
+  margin: 20px 0px;
+  gap: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,14 +167,16 @@ a, a:hover, a:focus, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__searcher--user {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,12 +250,11 @@ a, a:hover, a:focus, a:active {
 }
 
 .main {
-  margin-left: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 4rem 1rem;
+  gap: 4rem 6rem;
 }
 
 .main__tile {
@@ -264,6 +271,7 @@ a, a:hover, a:focus, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 22%;
 }
 
 .main__tile--info {
@@ -302,7 +310,6 @@ a, a:hover, a:focus, a:active {
           justify-content: center;
   width: 100%;
   margin-top: 10%;
-  padding: 5%;
 }
 
 .footer__newsletter {
@@ -325,6 +332,27 @@ a, a:hover, a:focus, a:active {
   border-top: solid lightgrey 1px;
 }
 
+.footer__newsletter--advertisement {
+  margin-bottom: 0.5%;
+  font-size: 2.5rem;
+}
+
+.footer__newsletter--call {
+  margin-bottom: 0.5%;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.footer__newsletter--input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  width: 30%;
+}
+
 .footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,9 +364,10 @@ a, a:hover, a:focus, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 5% 0 5% 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0 5% 0;
   width: 100%;
   border-top: solid lightgrey 1px;
   border-bottom: solid lightgrey 1px;
@@ -358,6 +387,7 @@ a, a:hover, a:focus, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0.2%;
 }
 
 .footer__info--contact__number {
@@ -378,6 +408,10 @@ a, a:hover, a:focus, a:active {
 
 .footer__info--contact__number--icon {
   width: 20px;
+}
+
+.footer__info--contact__number--text {
+  color: #63cff9;
 }
 
 .footer__menu {
@@ -453,6 +487,7 @@ a, a:hover, a:focus, a:active {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin-top: 3%;
 }
 
 .footer__bottom--info {
@@ -468,6 +503,28 @@ a, a:hover, a:focus, a:active {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.footer__bottom--info__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.footer__bottom--info__section--icon {
+  width: 20px;
 }
 
 .footer__bottom--sales {
@@ -501,9 +558,13 @@ a, a:hover, a:focus, a:active {
           justify-content: space-evenly;
 }
 
+.footer__bottom--sales__item--price {
+  font-weight: 600;
+}
+
 .scroll-up {
   position: absolute;
-  left: 90vw;
+  right: 2vw;
   bottom: 2vh;
   cursor: pointer;
   display: -webkit-box;

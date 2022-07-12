@@ -1,12 +1,12 @@
 .main {
-  margin-left: 10%;
+  // margin-left: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 4rem 1rem;
+  gap: 4rem 6rem;
 
   &__tile {
     @include flexCenter(column, center, center);
-    // max-width: 20%;
+    width: 22%;
     
     &--info {
       @include flexCenter(column, center, center);
